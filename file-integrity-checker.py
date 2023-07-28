@@ -30,8 +30,8 @@ def check_file_integrity(filename, expected_hash):
 
 if __name__ == "__main__":
 
-  filename = "example.txt"
-  expected_hash = "<hash>"
+  filename = input("Pass the file name: ")
+  expected_hash = input("What is the hash of the file: ")
 
   if check_file_integrity(filename, expected_hash):
     console.print("[*] File integrity check passed.", style="bold green")
